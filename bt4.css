@@ -1,0 +1,106 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        
+        .header-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .header {
+            flex: 1;
+            background: orange;
+            min-height: 50px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        
+        .main {
+            background: yellow;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* 🔶 Section */
+        .section-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .section {
+            flex: 1;
+            background: blue;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+     
+        .footer-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .footer {
+            flex: 1;
+            background: lightgray;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+       
+        @media (max-width: 1200px) {
+            .container {
+                width: 95%;
+            }
+            .header-container {
+                flex-direction: row;
+            }
+            .section-container {
+                flex-wrap: wrap;
+            }
+            .footer-container {
+                flex-wrap: wrap;
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            .header-container,
+            .section-container,
+            .footer-container {
+                flex-direction: column;
+            }
+            .main {
+                min-height: 120px; 
+            }
+        }
